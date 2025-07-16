@@ -1,0 +1,61 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#video-container {
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #000;
+  display: inline-block;
+  line-height: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden; /* 角丸を適用するため */
+}
+
+#video-stream {
+  display: block;
+  max-width: 90vw;
+  height: auto;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.face-box {
+  position: absolute;
+  border: 2px solid #1877f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(24, 119, 242, 0.7);
+  transition: all 0.2s ease-in-out;
+}
+
+.face-label {
+  background-color: rgba(24, 119, 242, 0.9);
+  color: white;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -28px;
+  left: -2px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
